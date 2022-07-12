@@ -107,9 +107,8 @@
 								<p>The goal of the 2022 Challenge is to discriminate life-threatening VAs (i.e., Ventricular Fibrillation and Ventricular Tachycardia) from single-lead (RVA-Bi) IEGM recordings. </p>
 								<p>We ask participants to design and implement a working, open-source deep learning algorithm that can automatically discriminate life-threatening VAs (i.e., binary classification: VAs or non-VAs) from IEGM recordings while being able to be deployed and run on the given MCU platform. We will award prizes to the teams with top comprehensive performances in terms of detection precision, memory occupation, and inference latency. </p>
 								<p><b>3 Data</b></p>
-								<p>The data contains single-lead IEGMs recordings retrieved from the lead RVA-Bi. Each recording is 5-second in length with 250 Hz sampling rate. The recordings are pre-processed by applying a band-pass filter with a frequency of a pass-band frequency of 15 Hz and a stop-band frequency of 55 Hz. Each IEGM recording has one label that describes the cardiac abnormalities (or normal sinus rhythm). We have provided the lists of labels for reference. </p>
+								<p>The data contains single-lead IEGMs recordings retrieved from the lead RVA-Bi. Each recording is 5-second in length with 250 Hz sampling rate. The recordings are collected by a sensing circuit that includes a 15-55Hz band-pass filter. Each IEGM recording has one label that describes the cardiac abnormalities (or normal sinus rhythm). We have provided the lists of labels for reference. </p>
 								<p>The IEGM recordings are partitioned patient-wisely in the training and testing set. 80% of the subjects’ IEGM recordings are released as training material. The rest 20% of the subjects’ IEGM recordings would be utilized to evaluate the detection performances of the submitted deep learning algorithm.</p>
-								<p>Our dataset is retrieved from volumes I & II of Ann Arbor Electrogram Libraries (AAEL), which is one of the largest datasets for IEGMs and is used by all manufacturers developing implantable defibrillators to test their methods [4]. The original sampling rate of all recordings is 1,000 Hz. Different periods of recordings have been annotated and reviewed by cardiac electrophysiologists to ensure an accurate interpretation of arrhythmia.</p>
 								<p><b>4 MCU Platform and Cube.AI</b></p>
 								<p>The development board required in the Challenge is NUCLEO-L432KC, which is with ARM Cortex-M4 core at 80 MHz, 258 Kbytes of flash memory, 64 Kbytes of SRAM, and embedded ST-LINK/V2-1 debugger/programmer. The development board also supports STM32 X-Cube-AI, which is the an STM32Cube Expansion Package part of the STM32Cube.AI ecosystem and extending STM32CubeMX capabilities with automatic conversion of pre-trained Artificial Intelligence algorithms, including Neural Network and classical Machine Learning models, and integration of generated optimized library into the user's project. The practical performances of the deep learning algorithm would be deployed and evaluated on the development board with the help of X-Cube-AI. </p>
 								<table style="text-align: left; width: 100%; margin-left:
@@ -143,23 +142,7 @@
               </tbody>
             </table>
             </td>
-			<td style="vertical-align: top;">
-			                    <table style="text-align: left; width: 150px; margin-left: auto; margin-right: 0px;" border="0" cellpadding="4" cellspacing="2">
-			                      <tbody>
-														<tr align="center">
-														  <td style="vertical-align: top;">
-														  <a href="https://www.nd.edu/"><img border="0" src="Figures/12.png" ><br>
-														    </a></td>
-														</tr>
-														
-			                        <tr align="center">
-			                          <td style="vertical-align: top;">
-										<a href="https://www.scuec.edu.cn/"><img border="0" src="Figures/11.png" ><br>
-			                            </a></td>
-			                        </tr>
-			                      </tbody>
-			                    </table>
-			                  </td>
+			
           </tr>
         </tbody>
       </table>
