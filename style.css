@@ -1,0 +1,150 @@
+/*
+    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p, div {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.7em;
+/*     color: #999999; */
+}
+
+h2 a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #E5E4E2;
+    color: #708090;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #D3D3D3;
+    color: #36454F;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #ffffff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #ffffff;
+    background: #708090;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #6082B6;
+    background: #ffffff;
+}
+
+#sidebar ul ul a:hover {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6082B6;
+}
+
+#content {
+  margin-left: 250px;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-nav {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+@media (min-width: 1200px) {
+  #sidebar {
+      margin-left: 0;
+  }
+  #sidebar.active {
+      margin-left: -250px;
+  }
+  #content {
+      margin-left: 250px;
+  }
+  #content.active {
+      margin-left: 0;
+  }
+/*   .container {
+    max-width:95%;
+  } */
+}
+
+@media (max-width: 1200px) {
+  #sidebar {
+      margin-left: -250px;
+  }
+  #sidebar.active {
+      margin-left: 0;
+  }
+  #content {
+      margin-left: 0;
+  }
+  #content.active {
+      margin-left: 250px;
+  }
+  p, div {
+    font-size: 1.2em;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.3em;
+  }
+  .container {
+    max-width:95%;
+  }
+}
